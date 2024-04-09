@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+div {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    background-color: black;
+}
+div i {
+    margin: 100px 20px;
+    font-size: 80px;
+    color: grey;
+}
+#twitter::after {
+    content: '';
+    display: block;
+    width: 80px;
+    border: 2px solid rgb(34, 188, 249);
+    margin-top: -85px;
+    margin-left: -5px;
+    border-radius: 10px;
+    transition: transform .2s .2s linear;
+}
+#twitter {
+    color: grey;
+    transition: color .1s .3s linear;
+}
+#twitter:hover::after {
+    transform: translateY(90px);
+}
+#twitter:hover {
+    color: rgb(34, 188, 249);
+}
+/* Whatsap icon */
+#whatsapp::after {
+    content: '';
+    display: block;
+    width: 80px;
+    border: 2px solid rgb(90, 248, 90);
+    margin-top: -85px;
+    margin-left: -10px;
+    border-radius: 10px;
+    transition: transform .2s .2s linear;
+}
+#whatsapp{
+    color: grey;
+    transition: color 1s .3s linear;
+}
+#whatsapp:hover::after {
+    transform: translateY(90px);
+}
+#whatsapp:hover {
+    color: rgb(96, 235, 96);
+}
+/* YOUTUBE */
+#youtube::after {
+    content: '';
+    display: block;
+    width: 80px;
+    border: 2px solid red;
+    margin-top: -85px;
+    margin-left: 5px;
+    border-radius: 10px;
+    transition: transform .2s .2s linear;
+}
+#youtube{
+    color: grey;
+    transition: .1s .3s ease-in-out;
+}
+#youtube:hover::after {
+    transform: translateY(90px);
+}
+#youtube:hover {
+    color: red;
+}
+h1{
+    margin: 10px 500px;
+    color: pink;
+}
+span{
+    margin: 0 550px;
+    color: pink;
+}
